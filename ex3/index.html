@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QUESTION 1</title>
+</head>
+
+<body>
+    <div class="toolbar-wrapper">
+        <div>
+            <div>
+                <label>Product Count</label>
+                <div class="select-group">
+                    <select>
+                        <option value="4 products" selected="selected">4 products</option>
+                        <option value="6 products">6 products</option>
+                        <option value="8 products">8 products</option>
+                    </select>
+                </div>
+            </div>
+            <div>4 products</div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script>
+        $(".select-group select").change(function () {
+            var x = $(this).find('option:selected').text();
+            $(this).parent().parent().next().text(x);
+        });
+    </script>
+</body>
+
+</html>
