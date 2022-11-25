@@ -5,33 +5,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>QUESTION 1</title>
+    <title>QUESTION 3</title>
+    <style>
+        .bc-container {
+            background-color: #932D12;
+            display: table;
+        }
+
+        .bc-item {
+            color: #FFF;
+            display: table-cell;
+            vertical-align: middle;
+            padding: 25px 15px;
+        }
+
+        .bc-item:first-child {
+            text-align: center;
+            min-width: 200px;
+        }
+
+        .bc-item:not(:first-child) {
+            background-color: #E17654;
+            padding-right: 15px;
+            padding-left: 15px;
+            width: 50%;
+        }
+
+        .bc-item:nth-child(2) {
+            border-right: 1px solid #FFF;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="toolbar-wrapper">
-        <div>
-            <div>
-                <label>Product Count</label>
-                <div class="select-group">
-                    <select>
-                        <option value="4 products" selected="selected">4 products</option>
-                        <option value="6 products">6 products</option>
-                        <option value="8 products">8 products</option>
-                    </select>
-                </div>
-            </div>
-            <div>4 products</div>
+    <div class="bc-container">
+        <div class="bc-item">Corporate Ipsum</div>
+        <div class="bc-item">
+            Leverage agile frameworks to provide a robust synopsis for high level
+            overviews. Iterative approaches to corporate strategy foster
+            collaborative thinking to further the overall value proposition.
+            Leverage agile frameworks to provide a robust synopsis for high level
+            overviews. Iterative approaches to corporate strategy foster
+            collaborative thinking to further the overall value proposition.
+            Iterative approaches to corporate strategy foster collaborative thinking
+            to further the overall value proposition.
+        </div>
+        <div class="bc-item">
+            Capitalise on low hanging fruit to identify a ballpark value added
+            activity to beta test. Override the digital divide with additional
+            clickthroughs from DevOps. Nanotechnology immersion along the
+            information highway will close the loop on focusing solely on the bottom
+            line.
         </div>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script>
-        $(".select-group select").change(function () {
-            var x = $(this).find('option:selected').text();
-            $(this).parent().parent().next().text(x);
-        });
-    </script>
 </body>
 
 </html>
